@@ -3,6 +3,9 @@ ruby '2.0.0'
 
 group :development, :test do
 	gem 'rspec-rails','2.13.1'
+	gem 'spork-rails','4.0.0'
+	gem 'guard-spork','1.5.0'
+	gem 'childprocess','0.3.6'
 end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -29,7 +32,11 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 gem 'spring',        group: :development
+gem 'minitest', '~> 5.0'
+gem	'capybara'
 
+#gem 'capybara/dsl'
+#gem 'capybara/rspec'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
